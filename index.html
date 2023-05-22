@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Chrome">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Práctica de API´S HTML5</title>
+    </head>
+    <body>
+        <h1> Carga en el siguiente botón el vídeo que quieres ver</h1>
+        <input type="file" accept="video/mp4" onchange="handleFileSelect(this.files[0])">
+        <div>
+            <video id="videoPlayer" width="600" height="300" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+        <div id="button">
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="subirvolumen">+ Volumen</button>
+            <button id="bajarvolumen">- Volumen</button>
+        </div>
+        <div id="cargando" style="display: none;">Cargando el vídeo, espere.</div>
+        <script src="script.js"></script>
+        
+    </body>
+</html>
